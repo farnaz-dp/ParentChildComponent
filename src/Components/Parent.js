@@ -1,6 +1,7 @@
 
 import React from  'react'
 import {Child} from "./Child";
+import {Login} from "./Login";
 
 class Parent extends React.Component{
     constructor(props) {
@@ -53,13 +54,14 @@ class Parent extends React.Component{
     render() {
         return (
             <div>
-              <Child
-                  label={this.state.labelState}
-                  startHandler={this.startHandler}
-                  stopHandler={this.stopHandler}
-                  toggleHandler={this.toggleHandler}
+                <Login/>
+                <Child
+                    label={this.state.labelState}
+                    startHandler={this.startHandler}
+                    stopHandler={this.stopHandler}
+                    toggleHandler={this.toggleHandler}
 
-              />
+                />
             </div>
         )
     }
